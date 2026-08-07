@@ -58,7 +58,7 @@ export default function Experience() {
                       alt={badge.name}
                       width={64}
                       height={64}
-                      className="mb-3 shrink-0"
+                      className="mb-3 shrink-0 h-auto"
                     />
                     <p className="text-xs text-center font-medium leading-snug line-clamp-3" title={badge.name}>
                       {badge.name}

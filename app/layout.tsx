@@ -11,7 +11,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Carl Bicol — Full-Stack Web Developer",
+  title: "Carl Bicol Portfolio",
   description:
     "Personal developer portfolio of Carl Aldouz D. Bicol — Full-Stack Web Developer showcasing projects, skills, and experience.",
 };

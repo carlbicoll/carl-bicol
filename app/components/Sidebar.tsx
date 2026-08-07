@@ -14,19 +14,10 @@ const NAV_LINKS = [
   { href: "/contact", label: "Contact", icon: <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg> },
 ];
 
-const EMAIL = "carlbicoll@gmail.com";
-
 export function Sidebar() {
   const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(EMAIL);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   const sidebarContent = (
     <div className="flex flex-col h-full">
@@ -58,7 +49,7 @@ export function Sidebar() {
         <button
           onClick={toggleTheme}
           aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-          className="w-full flex items-center gap-2 px-3 py-2 text-sm rounded-md hover:bg-(--bg-secondary)] transition-colors opacity-70 hover:opacity-100"
+          className="w-full flex items-center gap-2 border px-3 py-2 text-sm rounded-md hover:bg-(--bg-secondary)] transition-colors opacity-70 hover:opacity-100"
         >
           {theme === "light" ? (
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -71,17 +62,6 @@ export function Sidebar() {
           )}
           {theme === "light" ? "Dark mode" : "Light mode"}
         </button>
-
-        <button
-          onClick={copyEmail}
-          aria-label="Copy email to clipboard"
-          className="w-full flex items-center gap-2 px-3 py-2 text-sm rounded-md hover:bg-(--bg-secondary)] transition-colors opacity-70 hover:opacity-100"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          {copied ? "Copied!" : "carlbicoll@gmail.com"}
-        </button>
       </div>
     </div>
   );
@@ -92,7 +72,7 @@ export function Sidebar() {
       <button
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle navigation"
-        className="fixed top-4 left-4 z-50 md:hidden p-2 rounded-md hover:bg-(--bg-secondary)] transition-colors"
+        className="fixed top-4 left-4 z-50 md:hidden p-2 rounded-md hover:bg-(--bg-secondary) transition-colors"
         style={{ background: "var(--bg)" }}
       >
         {mobileOpen ? (

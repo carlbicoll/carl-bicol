@@ -9,7 +9,7 @@ export default function Home() {
         <div className="max-w-2xl w-full">
           <ScrollFadeIn>
             <p className="text-sm mb-4" style={{ color: "var(--fg-muted)" }}>
-              $ whoami
+              I am
             </p>
           </ScrollFadeIn>
 
