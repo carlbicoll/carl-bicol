@@ -16,7 +16,7 @@ export default function About() {
               className="w-32 h-32 rounded-full border-2 mb-8 flex items-center justify-center"
               style={{ borderColor: "var(--border)" }}
             >
-              <Image src="/profile1.jpg" alt="Profile Picture" width={130} height={130} className="rounded-full" />
+              <Image src="/profile2.jpg" alt="Profile Picture" width={130} height={130} className="rounded-full" />
             </div>
           </ScrollFadeIn>
 
@@ -50,7 +50,7 @@ export default function About() {
             </p>
           </ScrollFadeIn>
 
-          <ScrollFadeIn delay="animate-delay-400">
+          <ScrollFadeIn delay="animate-delay-400" className="mt-8">
             <h2 className="text-xl font-bold mb-4">Interests</h2>
             <p className="text-base leading-relaxed">
               Outside coding and developing projects, I play ball games like basketball and

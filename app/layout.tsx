@@ -11,9 +11,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CADB.dev | Carl Aldouz D. Bicol",
+  title: "Carl Bicol — Full-Stack Web Developer",
   description:
-    "Personal developer portfolio of Carl Aldouz D. Bicol — Software Developer showcasing projects, skills, and experience.",
+    "Personal developer portfolio of Carl Aldouz D. Bicol — Full-Stack Web Developer showcasing projects, skills, and experience.",
 };
 
 export default function RootLayout({

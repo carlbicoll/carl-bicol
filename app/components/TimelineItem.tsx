@@ -7,13 +7,13 @@ interface TimelineItemProps {
 
 export function TimelineItem({ role, company, dates, description }: TimelineItemProps) {
   return (
-    <div className="relative pl-8 pb-8 last:pb-0">
+    <div className="relative pl-8 pb-8 last:pb-0 mb-8">
       <div
         className="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2"
         style={{ borderColor: "var(--fg)", background: "var(--bg)" }}
       />
       <div
-        className="absolute left-[5px] top-4 w-[1px] h-full"
+        className="absolute left-1.25 top-4 w-px h-full"
         style={{ background: "var(--border)" }}
       />
       <div>

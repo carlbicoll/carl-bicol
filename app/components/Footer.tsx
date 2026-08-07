@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const SOCIAL_LINKS = [
-  { href: "https://github.com/yourusername", label: "GitHub" },
-  { href: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-  { href: "https://facebook.com/yourusername", label: "Facebook" },
-  { href: "https://instagram.com/yourusername", label: "Instagram" },
+  { href: "https://github.com/carlbicoll", label: "GitHub" },
+  { href: "https://linkedin.com/in/carlbicoll", label: "LinkedIn" },
+  { href: "https://facebook.com/carlbicol", label: "Facebook" },
+  { href: "https://instagram.com/carlbicol", label: "Instagram" },
 ];
 
 function GithubIcon() {
@@ -68,7 +68,7 @@ export function Footer() {
           ))}
         </div>
         <p className="text-xs opacity-40">
-          &copy; {new Date().getFullYear()} Carl Aldouz D. Bicol. All rights reserved.
+          &copy; {new Date().getFullYear()} Carl Bicol. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,25 +1,7 @@
 import { Footer } from "../components/Footer";
 import { SkillBadge } from "../components/SkillBadge";
 import { ScrollFadeIn } from "../components/ScrollFadeIn";
-
-const SKILL_CATEGORIES = [
-  {
-    category: "Languages",
-    skills: ["C", "C++", "Java", "JavaScript", "HTML", "CSS"],
-  },
-  {
-    category: "Frameworks & Libraries",
-    skills: ["React.js", "Next.js", "React Native (Expo)", "Node.js", "Express.js", "FastAPI"],
-  },
-  {
-    category: "Databases & BaaS",
-    skills: ["MySQL", "PostgreSQL", "Supabase"],
-  },
-  {
-    category: "Other",
-    skills: ["Git", "Blockchain (Exploring)", "Web Development", "Mobile Development"],
-  },
-];
+import { SKILL_CATEGORIES } from "../../data/skills";
 
 export default function Skills() {
   return (

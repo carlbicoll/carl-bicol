@@ -36,7 +36,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-md border transition-colors hover:border-(--border-hover)]"
+                className="btn-hover inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-md border transition-colors hover:border-(--border-hover)]"
                 style={{ borderColor: "var(--border)" }}
               >
                 View Projects
@@ -46,7 +46,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/experience"
-                className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-md border transition-colors hover:border-(--border-hover)]"
+                className="btn-hover inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-md border transition-colors hover:border-(--border-hover)]"
                 style={{ borderColor: "var(--border)" }}
               >
                 Contact Me
